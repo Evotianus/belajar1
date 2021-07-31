@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebController;
+use App\Http\Controllers\SiswaController;
 
 
 /*
@@ -33,3 +34,6 @@ Route::get('/', [WebController::class, 'index']);
 // });
 
 Route::get('/qna', [WebController::class, 'qna']);
+
+
+Route::get('/data-siswa', [SiswaController::class, 'index']);
